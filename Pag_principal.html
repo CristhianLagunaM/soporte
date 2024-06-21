@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #02681D;
+            color: white;
+            padding-top: 20px;
+            border-right: 1px solid #dee2e6;
+        }
+
+        .sidebar-title {
+            text-align: center;
+            color: white;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-menu {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar-item {
+            padding: 10px 15px;
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .sidebar-item:hover {
+            background-color: #02510b;
+            cursor: pointer;
+        }
+
+        .dropdown-toggle {
+            color: white;
+            width: 100%;
+            text-align: left;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .dropdown-toggle:hover {
+            background-color: #02510b;
+            color: white;
+        }
+
+        .dropdown-menu {
+            background-color: #02681D;
+            border: 1px solid #dee2e6;
+        }
+
+        .dropdown-item {
+            color: white;
+        }
+
+        .dropdown-item:hover {
+            background-color: #02510b;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .header .icons a {
+            color: #333;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 250px;
+            width: calc(100% - 250px);
+            background-color: white;
+            padding: 10px;
+            border-top: 1px solid #dee2e6;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .footer img {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1 class="sidebar-title">SOPORTE OATI</h1>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item"><i class="fa fa-home"></i> Inicio</li>
+            <li class="sidebar-item dropdown">
+                <a class="dropdown-toggle" href="#" id="soporteDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-support"></i> Soporte
+                </a>
+                <div class="dropdown-menu" aria-labelledby="soporteDropdown">
+                    <a class="dropdown-item" href="#">Cambio de jefe</a>
+                    <a class="dropdown-item" href="#">Registro de dependencia</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="header">
+            <img src="logo.png" alt="Logo">
+            <div class="icons">
+                <a href="#"><i class="fa fa-search"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+                <a href="#"><i class="fa fa-globe"></i></a>
+                <a href="#"><i class="fa fa-bell"></i></a>
+                <a href="mailto:computo@udistrital.edu.co"><i class="fa fa-envelope"></i> computo@udistrital.edu.co</a>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <h2>Bienvenido al módulo de soporte</h2>
+            <img src="support_image.png" alt="Support Image" class="img-fluid">
+        </div>
+    </div>
+    <div class="footer">
+        <img src="university_logo.png" alt="University Logo">
+        <div>
+            <span>Oficina Asesora de tecnologias e información</span><br>
+            <span>Lunes a viernes 8am a 5pm</span><br>
+            <span>Sistema Integrado de informática y Telecomunicaciones</span>
+        </div>
+        <div>
+            <span><i class="fa fa-phone"></i> 323 93 00 Ext. 1112</span><br>
+            <span><i class="fa fa-map-marker"></i> Cra 8 # 40-78 Piso 1</span><br>
+            <span><i class="fa fa-envelope"></i> computo@udistrital.edu.co</span>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
