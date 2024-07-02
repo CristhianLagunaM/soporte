@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Jefe</title>
+    <link rel="stylesheet" href="cambio_jefe.css">
+</head>
+<body>
+    <h1>Formulario para Cambio de Jefe</h1>
+    <form id="cambioJefeForm">
+        <label for="dependencia">Dependencia:</label>
+        <select id="dependencia" name="dependencia" required>
+            <option value="">Selecciona una dependencia</option>
+            <!-- Añadir aquí las opciones de dependencias -->
+            <option value="dep1">Dependencia 1</option>
+            <option value="dep2">Dependencia 2</option>
+            <!-- etc. -->
+        </select><br><br>
+        <label for="codigoSupervisor">Código de Supervisor:</label>
+        <input type="text" id="codigoSupervisor" name="codigoSupervisor" required><br><br>
+
+        <label for="nombre">Nombre del Nuevo Jefe:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="primerApellido">Primer Apellido:</label>
+        <input type="text" id="primerApellido" name="primerApellido" required><br><br>
+
+        <label for="segundoApellido">Segundo Apellido:</label>
+        <input type="text" id="segundoApellido" name="segundoApellido" required><br><br>
+
+        <label for="numeroDocumento">Número de Documento:</label>
+        <input type="text" id="numeroDocumento" name="numeroDocumento" required><br><br>
+
+        <label for="fechaInicio">Fecha de Inicio:</label>
+        <input type="date" id="fechaInicio" name="fechaInicio" required><br><br>
+
+        <label for="fechaFin">Fecha de Fin:</label>
+        <input type="date" id="fechaFin" name="fechaFin"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <script src="cambio_jefe.js"></script>
+</body>
+</html>
