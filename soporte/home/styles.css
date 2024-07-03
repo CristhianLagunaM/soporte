@@ -52,7 +52,7 @@ header {
 }
 
 .header-right a:hover {
-    background-color: #ddd; 
+    background-color: #9f9c9c; 
     color: #000; 
 }
 
@@ -64,7 +64,7 @@ header {
     display: flex;
     flex: 1;
     overflow: hidden;
-    position: relative; /* Añadido para ajuste de contenido absoluto */
+    position: relative; 
 }
 
 aside {
@@ -96,12 +96,12 @@ aside nav ul li a {
     font-size: 1rem;
     padding: 10px;
     display: block;
-    transition: background-color 0.3s, color 0.3s; /* Agregando transición suave */
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 aside nav ul li a:hover {
-    background-color: #024714; /* Cambia el color de fondo al pasar el cursor */
-    color: #fff; /* Asegura que el texto siga siendo blanco */
+    background-color: #024714; 
+    color: #fff; 
 }
 
 .submenu {
@@ -117,7 +117,7 @@ aside nav ul li a:hover {
 .content {
     flex-grow: 1;
     background-color: #e0e0e0;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     overflow: auto;
     position: relative;
@@ -134,7 +134,7 @@ aside nav ul li a:hover {
 .fondo {
     background-color: #fff;
     display: inline-block;
-    padding: 320px 400px;
+    padding: 280px 580px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 50%;
@@ -150,15 +150,16 @@ aside nav ul li a:hover {
 }
 
 .support-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    max-width: 60%;  
+    max-height: 100%; 
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     z-index: 2;
-    max-width: calc(100% - 40px); 
-    max-height: calc(100% - 40px); 
+    filter: invert(22%) sepia(50%) saturate(7000%) hue-rotate(69deg) brightness(80%) contrast(92%);
 }
 
 footer {
@@ -220,8 +221,8 @@ footer {
     }
 
     .support-image {
-        max-width: calc(100% - 80px); /* Ajuste del ancho máximo para pantallas más pequeñas */
-        max-height: calc(100% - 80px); /* Ajuste de la altura máxima para pantallas más pequeñas */
+        max-width: calc(100% - 80px); 
+        max-height: calc(100% - 80px); 
     }
 
     .footer-logo {
@@ -265,8 +266,8 @@ footer {
     }
 
     .support-image {
-        max-width: calc(100% - 100px); /* Ajuste del ancho máximo para pantallas más pequeñas */
-        max-height: calc(100% - 100px); /* Ajuste de la altura máxima para pantallas más pequeñas */
+        max-width: calc(100% - 100px); 
+        max-height: calc(100% - 100px); 
     }
 
     .footer-logo {
@@ -296,8 +297,8 @@ footer {
     }
 
     .support-image {
-        max-width: calc(100% - 50px); /* Ajuste del ancho máximo para pantallas más pequeñas */
-        max-height: calc(100% - 50px); /* Ajuste de la altura máxima para pantallas más pequeñas */
+        max-width: calc(100% - 50px); 
+        max-height: calc(100% - 50px); 
     }
 
     .footer-logo {

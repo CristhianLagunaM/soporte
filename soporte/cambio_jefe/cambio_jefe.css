@@ -17,16 +17,16 @@ label {
 }
 
 input[type="text"], input[type="date"], select {
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     padding: 8px;
     font-size: 16px;
-    border: 1px solid #ccc; 
-    transition: border-color 0.3s ease; 
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
 }
 
 input[type="text"]:focus, input[type="date"]:focus, select:focus {
-    border-color: #007bff; 
-    outline: none; 
+    border-color: #007bff;
+    outline: none;
 }
 
 input[type="submit"] {
@@ -34,10 +34,62 @@ input[type="submit"] {
     color: #fff;
     border: none;
     cursor: pointer;
-    padding: 12px 20px; 
-    font-size: 18px; 
+    padding: 12px 20px;
+    font-size: 18px;
 }
 
 input[type="submit"]:hover {
     background-color: #024714;
+}
+
+/* Estilos para la ventana de aviso */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.popup p {
+    margin-bottom: 10px;
+}
+
+.popup button {
+    margin: 0 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.popup #btnAceptar {
+    background-color: #18397A;
+    color: #fff;
+    border: none;
+}
+
+.popup #btnAceptar:hover {
+    background-color: #0E2B52;
+}
+
+.popup #btnCancelar {
+    background-color: #930E10;
+    color: #fff;
+    border: none;
+}
+
+.popup #btnCancelar:hover {
+    background-color: #6B0A0C;
 }
