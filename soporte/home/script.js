@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     cambioJefeLink.addEventListener('click', function (e) {
         e.preventDefault();
         defaultContent.style.display = 'none';  
-        iframeContent.src = '../cambio_jefe/cambio_jefe.html';  
+        iframeContent.src = '../cambio_jefe/cambio_jefe.html';   
         iframeContent.style.display = 'block';  
     });
 });
